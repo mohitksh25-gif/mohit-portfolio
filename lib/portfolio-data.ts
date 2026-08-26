@@ -92,6 +92,7 @@ export type Project = {
   imageAlt: string
   isConcept?: boolean
   isHardware?: boolean
+  gallery?: { src: string; alt: string }[]
 }
 
 export const PROJECTS: Project[] = [
@@ -147,9 +148,23 @@ export const PROJECTS: Project[] = [
       'Velcro straps, breadboard, wires & connectors',
     ],
     technologies: ['ESP32', 'Sensors', 'I2C', 'Hardware'],
-    image: '',
+    image: '/projects/smart-insole-2.jpeg',
     imageAlt: 'Smart Insole foot pressure detection hardware prototype',
     isHardware: true,
+    gallery: [
+      {
+        src: '/projects/smart-insole-2.jpeg',
+        alt: 'Blue foot-shaped pressure-sensor insole connected by ribbon cable to an ESP32 on a breadboard',
+      },
+      {
+        src: '/projects/smart-insole-1.jpeg',
+        alt: 'Close-up of the ESP32 dev board wired on a breadboard with jumper wires and resistors',
+      },
+      {
+        src: '/projects/smart-insole-3.jpeg',
+        alt: 'LPU project presentation slides showing the insole hardware and a laptop running the sensor code',
+      },
+    ],
   },
 ]
 
@@ -168,7 +183,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Completed July 14, 2026',
     description:
       'Foundational course covering core Python programming concepts and fundamentals.',
-    image: '',
+    image: '/certificates/infosys-python-part-1.png',
   },
   {
     title: 'Programming Fundamentals using Python – Part 2',
@@ -176,7 +191,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Completed July 14, 2026',
     description:
       'Continuation course building on Python fundamentals with further programming concepts.',
-    image: '',
+    image: '/certificates/infosys-python-part-2.png',
   },
   {
     title: 'Basics of Motivation and Leadership',
@@ -185,7 +200,7 @@ export const CERTIFICATES: Certificate[] = [
     date: 'Completed October 30, 2025',
     description:
       'Course covering the fundamentals of motivation and leadership skills.',
-    image: '',
+    image: '/certificates/uniathena-leadership.png',
   },
   {
     title: 'Educational & Community Awareness Work',
@@ -194,6 +209,6 @@ export const CERTIFICATES: Certificate[] = [
     date: '25/07/2026 – 30/07/2026',
     description:
       'Recognizes educational and community awareness work on child marriage, child labour, child education, Python basics and cyber security awareness among school students and the village community.',
-    image: '',
+    image: '/certificates/community-awareness.jpeg',
   },
 ]
